@@ -36,6 +36,7 @@ type Order @key(fields: "id") {
   """
   items: [ProductVariant!]! @requiresScopes(scopes: [["order:items"]])
   """
+
   The total cost of the order
   """
   total: Float
